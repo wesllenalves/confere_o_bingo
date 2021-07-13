@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957191188729",
+    "project_id": "confere-o-bingo",
+    "storage_bucket": "confere-o-bingo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957191188729:android:8abdd02d4ffba663ebb228",
+        "android_client_info": {
+          "package_name": "com.wesllen.confereobingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957191188729-7882i0uph4b4jluo8g4l052r9uo0cqs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEfi8eReVDgB6DAluGP3GDK2T7gGvOCgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957191188729-7882i0uph4b4jluo8g4l052r9uo0cqs8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
