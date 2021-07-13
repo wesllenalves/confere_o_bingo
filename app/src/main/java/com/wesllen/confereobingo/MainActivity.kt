@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var tvResult: TextView
     lateinit var btnChoosePic: Button
     lateinit var btnChooseCam: Button
+    lateinit var btnGradeNumerica: Button
     lateinit var image: ImageView
 
     var intentActivityResultLauncher:ActivityResultLauncher<Intent>?=null
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         tvResult=findViewById(R.id.tvResult)
         btnChoosePic=findViewById(R.id.btnChoosePic)
         btnChooseCam=findViewById(R.id.btnChooseCam)
+        btnGradeNumerica=findViewById(R.id.btnGradeNumerica)
         image=findViewById(R.id.image)
 
         textRecognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
@@ -84,6 +86,15 @@ class MainActivity : AppCompatActivity() {
             var i = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(i, CAMERA_PERMISSION_CODE)
         }
+
+        btnGradeNumerica.setOnClickListener {
+            irParaGradeNumerica()
+        }
+    }
+
+    private fun irParaGradeNumerica() {
+        val gradeNumerica = Intent(this,GradeNumericaActivity::class.java)
+        startActivity(gradeNumerica)
     }
 
     private fun pickFromGallery() {
