@@ -1,4 +1,4 @@
-package com.wesllen.confereobingo
+package com.wesllen.confereobingo.view
 
 import android.Manifest
 import android.app.Activity
@@ -28,6 +28,8 @@ import com.google.mlkit.vision.text.TextRecognizer
 import com.google.mlkit.vision.text.TextRecognizerOptions
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
+import com.wesllen.confereobingo.GradeNumericaActivity
+import com.wesllen.confereobingo.R
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -93,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun irParaGradeNumerica() {
-        val gradeNumerica = Intent(this,GradeNumericaActivity::class.java)
+        val gradeNumerica = Intent(this, GradeNumericaActivity::class.java)
         startActivity(gradeNumerica)
     }
 

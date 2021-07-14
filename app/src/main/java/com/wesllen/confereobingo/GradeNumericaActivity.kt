@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.wesllen.confereobingo.view.AddDialogFragment
 
 class GradeNumericaActivity : AppCompatActivity() {
     private val btn = arrayOfNulls<Button>(GradeNumericaActivity.idArray.size)
@@ -153,6 +154,7 @@ class GradeNumericaActivity : AppCompatActivity() {
             btn[i]!!.setOnLongClickListener { v ->
                 when (v.id) {
                     R.id.btn1 -> {
+                        editNumber()
                         Toast.makeText(applicationContext, "Botão Longo 0 ", Toast.LENGTH_SHORT)
                         .show()
                     }
@@ -210,6 +212,11 @@ class GradeNumericaActivity : AppCompatActivity() {
 
             i++
         }
+    }
+
+    private fun editNumber() {
+        val dialog  = AddDialogFragment()
+        dialog.show(supportFragmentManager, dialog.tag)
     }
 
     companion object {

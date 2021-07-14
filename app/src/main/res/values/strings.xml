@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Confere o Bingo</string>
+    <string name="register_produter">Editar Numero</string>
+    <string name="dica_text_edit_input">Ex: Digite 33</string>
+    <string name="btn_editar">Editar</string>
 </resources>
